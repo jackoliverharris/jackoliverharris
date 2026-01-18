@@ -82,7 +82,7 @@ const App: React.FC = () => {
 
         {/* Buttondown Subscription Form */}
         <form 
-          action="https://buttondown.com/api/emails/embed-subscribe/jackharris"
+          action="https://buttondown.com/api/emails/embed-subscribe/jackoliverharris"
           method="post"
           target="_blank"
           className="flex flex-col sm:flex-row gap-3 w-full"
