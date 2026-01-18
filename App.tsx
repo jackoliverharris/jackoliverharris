@@ -80,12 +80,18 @@ const App: React.FC = () => {
           </p>
         </div>
 
+        {/* Buttondown Subscription Form */}
         <form 
-          onSubmit={(e) => e.preventDefault()} 
+          action="https://buttondown.com/api/emails/embed-subscribe/jackharris"
+          method="post"
+          target="_blank"
           className="flex flex-col sm:flex-row gap-3 w-full"
         >
+          <label htmlFor="bd-email" className="sr-only">Email address</label>
           <input 
             type="email" 
+            name="email"
+            id="bd-email"
             placeholder="Email address"
             required
             className="flex-1 bg-white border border-gray-100 rounded-md px-4 py-3 text-sm font-light focus:outline-none focus:border-gray-300 focus:ring-0 transition-all placeholder:text-gray-300"
